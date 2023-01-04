@@ -7,4 +7,16 @@ const color = require("cli-color");
 })('Ashu');
 
 
-console.log(x)
+// console.log(x)
+
+console.log(color.bgBlue('Namaste'))
+
+
+
+//local module
+
+
+const register =require('./auth')
+
+register('Ashutosh')
+
