@@ -42,11 +42,19 @@ const path = require("path");
 
 const fs = require("fs");
 
-fs.mkdir(path.join(__dirname, "/test"), (err) => {
-  if (err) {
-    console.log("ERROR",err);
-    return;
-  }
+// fs.mkdir(path.join(__dirname, "/test2"), (err) => {
+//   if (err) {
+//     console.log("ERROR", err);
+//     return;
+//   }
 
-  console.log("folder created");
+//   console.log("folder created");
+// });
+
+fs.writeFile(path.join(__dirname, "test", "test.txt"), "Hello Im learning node",(err)=>{
+    if(err){
+        console.log("ERROR", err);
+        return;
+    }
+    console.log("File ctreated")
 });
