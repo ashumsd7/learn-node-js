@@ -16,7 +16,9 @@ console.log(color.bgBlue('Namaste'))
 //local module
 
 
-const register =require('./auth')
+const auth =require('./auth')
 
-register('Ashutosh')
+console.log(auth)
+auth.register('Ashutosh')
+auth.login('username', '*****')
 
