@@ -1,6 +1,9 @@
-const amount= 12;
-if(amount<10){
-    console.log('small number')
-}else{
-    console.log('large number')
-}
+// modules
+
+const names = require("./4-names");
+
+console.log(names)
+
+// sayHi("susan");
+// sayHi(peter);
+// sayHi(john);
